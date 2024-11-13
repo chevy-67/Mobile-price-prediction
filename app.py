@@ -1,8 +1,8 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify # type: ignore
 import joblib
 import numpy as np
 
-model = joblib.load('mobile_randomForest_model.joblib')
+model = joblib.load('Models/RandomForestRegressor.joblib')
 
 app = Flask(__name__)
 
